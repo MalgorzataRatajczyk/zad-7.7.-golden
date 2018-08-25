@@ -11,7 +11,7 @@ $background-grey-color: rgb(241, 241, 241);
 /* variables for fonts */
 $headings-font: 'Montserrat', sans-serif;
 $text-font: 'Roboto Slab', serif;
-$italic: 'Yellowtail', cursive;
+$italic: 'Crimson Text', serif;
 
 
 /* class for heading h3 */
@@ -94,3 +94,88 @@ body {
 .col-lg-11 {width: 91.66%;}
 .col-lg-12 {width: 100%;}
 
+/* header */
+.jumbotron {
+    background-image: url("../images/Background_Image.png");
+    width: 100%;
+    max-width: 1400px;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .top_navigation {
+        display: block;
+        position: relative;
+        .logo {
+            float: left;
+            .logo-text {
+                font-family:'Great Vibes', cursive;
+                font-size: 26px;
+                line-height: 41px;
+                text-align: left;
+                color: $yellow;
+            }
+        }
+        .top_menu {
+            float: right;
+            width: 480px;
+            height: 15px;
+            ul {
+                display: inline-block;
+                list-style-type: none;
+                li {
+                    display: inline-block;
+                    padding: 0 5px;
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: rgb(250,250,250);
+                        font-family: $headings-font;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 41px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .welcome_text {
+        border: 2px solid red;
+        max-width: 1400px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;    
+        left: 50%;  
+        transform: translate(-50%,-50%);
+        .italic {
+            font-family: $italic;
+            text-transform: capitalize;
+            color: rgb(250,250,250);
+            font-size: 40px;
+            text-align: center;
+        }
+        .uppercase {
+            font-family: $headings-font;
+            text-transform: uppercase;
+            color: rgb(250,250,250);
+            font-size: 75px;
+            font-weight: 700;
+            text-align: center;
+
+        }
+    }
+    div {
+        .button {
+            @extend .yellow-button;
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    } 
+}
+/* section SERVICES */
