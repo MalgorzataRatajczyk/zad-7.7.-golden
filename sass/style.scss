@@ -494,3 +494,113 @@ body {
         }
     }
 }
+/* sekcja - OUR TEAM */ 
+.our_team {
+    width: 100%;
+    margin: auto;
+    background-color: $light-grey-color;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    .headings {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        h2 {
+            @extend .heading_h2;
+            width: 100%;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        p {
+            font-family: $italic;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+    .row {
+        width: 80%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+        .col {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            img {
+                align-self: center;
+                border: 7px solid rgb(250,250,250);
+                border-radius: 50%;
+                display: block;
+                position: center;
+                object-fit: cover;
+                width: 220px;
+                height: 220px;
+                margin: auto;
+            }
+            h3 {
+                @extend .heading_h3;
+                text-align: center;
+            }
+            p {
+                font-family: $text-font;
+                color: $text-color;
+                text-align: center;
+            }
+            .social-media-icons {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 140px;
+                height: 40px;
+                button {
+                    margin: 0;
+	                border: hidden;
+                    background-color: transaprent;
+                    .icon-btn {
+                        width: 40px;
+	                    height: 40px;
+                        border: 3px solid $black-headers-color;
+                        color: $black-headers-color;
+	                    background-color: transparent;
+	                    border-radius: 50%;
+	                    margin: 0;
+	                    padding: 0;
+	                    cursor: pointer;
+	                    font-size: 21px;
+                        line-height: 40px;
+                        .fa-twitter:hover {
+                            transition: .4s linear;
+                            color: rgb(250,250,250);
+                            background-color: $twitter_color;
+                        }
+                        .fa-facebook:hover {
+                            transition: .4s linear;
+                            color: rgb(250,250,250);
+                            background-color: $facebook-color;
+                        }
+                        .fa-pinterest-p:hover {
+                            transition: .4s linear;
+                            color: rgb(250,250,250);
+                            background-color: $pinterest_color;
+                        }
+                        .fa-google-plus-g:hover {
+                            transition: .4s linear;
+                            color: rgb(250,250,250);
+                            background-color: $googleplus-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
