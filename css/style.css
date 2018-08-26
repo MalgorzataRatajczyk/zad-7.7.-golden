@@ -1099,6 +1099,32 @@ body {
   .contact_us .contact_form .col-s-12 form textarea {
     height: auto;
   }
+  /* section - footer */
+  .footer .row {
+    flex-flow: column;
+  }
+  .footer .row .col-s-12 {
+    display: flex;
+    flex-flow: column;
+  }
+  .footer .row .col-s-12 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .row .col-s-12 button .fa-twitter:hover {
+    transition: none;
+  }
+  .footer .row .col-s-12 button .fa-facebook-f:hover {
+    transition: none;
+  }
+  .footer .row .col-s-12 button .fa-pinterest-p:hover {
+    transition: none;
+  }
+  .footer .row .col-s-12 button .fa-google-plus-g:hover {
+    transition: none;
+  }
 }
 
 /* ostatni nawias */

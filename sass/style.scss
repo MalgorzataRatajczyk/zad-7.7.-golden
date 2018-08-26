@@ -993,12 +993,34 @@ body {
             }
         }
     }
-
-
-
-
-
-
-
-
+    /* section - footer */
+    .footer {
+        .row {
+            flex-flow: column;
+            .col-s-12 {
+                display: flex;
+                flex-flow: column;
+            }
+            .col-s-12 {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center; 
+                button {
+                    .fa-twitter:hover {
+                        transition: none;
+                    }
+                    .fa-facebook-f:hover {
+                        transition: none;
+                    }
+                    .fa-pinterest-p:hover {
+                        transition: none;
+                    }
+                    .fa-google-plus-g:hover {
+                        transition: none;
+                    }
+                }
+            }
+        }
+    }
 } /* ostatni nawias */
