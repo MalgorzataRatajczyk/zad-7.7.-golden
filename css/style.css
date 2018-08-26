@@ -935,6 +935,59 @@ body {
     height: 93px;
     background-color: #fafafa;
   }
+  /* section - ABOUT US */
+  .about_us .content .row-left-side {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-self: center;
+  }
+  .about_us .content .row-left-side .col-s-12 {
+    justify-content: center;
+  }
+  .about_us .content .row-left-side .col-s-12 .uppercase {
+    align-self: center;
+  }
+  .about_us .content .row-left-side .col-s-12 .capitalize {
+    align-self: center;
+  }
+  .about_us .content .row-left-side .col-s-12 p {
+    align-self: center;
+  }
+  .about_us .content .row-left-side .col-s-12 {
+    justify-content: center;
+  }
+  .about_us .content .row-left-side .col-s-12 img {
+    width: 100%;
+    height: 100%;
+  }
+  .about_us .content .row-right-side {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-self: center;
+  }
+  .about_us .content .row-right-side .col-s-12 {
+    justify-content: center;
+  }
+  .about_us .content .row-right-side .col-s-12 img {
+    width: 100%;
+    height: 100%;
+  }
+  .about_us .content .row-right-side .col-s-12 {
+    justify-content: center;
+  }
+  .about_us .content .row-right-side .col-s-12 .uppercase {
+    align-self: center;
+  }
+  .about_us .content .row-right-side .col-s-12 .capitalize {
+    align-self: center;
+  }
+  .about_us .content .row-right-side .col-s-12 p {
+    align-self: center;
+  }
 }
 
 /* ostatni nawias */
