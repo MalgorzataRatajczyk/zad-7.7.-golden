@@ -1,9 +1,9 @@
 /* variables for colors */
 /* variables for fonts */
 /* class for heading h3 */
-.heading_h2, .services .headings h2, .portfolio .headings h2, .about_us .headings h2 { font-family: "Montserrat", sans-serif; color: #222222; font-size: 40px; font-weight: 700; line-height: 75px; text-align: center; text-transform: uppercase; }
+.heading_h2, .services .headings h2, .portfolio .headings h2, .about_us .headings h2, .our_team .headings h2 { font-family: "Montserrat", sans-serif; color: #222222; font-size: 40px; font-weight: 700; line-height: 75px; text-align: center; text-transform: uppercase; }
 
-.heading_h3, .services .row .col h3, .portfolio .gallery .col .description h3, .about_us .content .row-left-side .col .uppercase, .about_us .content .row-left-side .col .capitalize, .about_us .content .row-right-side .col .uppercase, .about_us .content .row-right-side .col .capitalize { font-family: "Montserrat", sans-serif; color: #222222; font-size: 18px; font-weight: 700; }
+.heading_h3, .services .row .col h3, .portfolio .gallery .col .description h3, .about_us .content .row-left-side .col .uppercase, .about_us .content .row-left-side .col .capitalize, .about_us .content .row-right-side .col .uppercase, .about_us .content .row-right-side .col .capitalize, .our_team .row .col h3 { font-family: "Montserrat", sans-serif; color: #222222; font-size: 18px; font-weight: 700; }
 
 .yellow-button, .jumbotron div .button { border-radius: 3px; background-color: #fed136; width: 240px; height: 65px; font-family: "Montserrat", sans-serif; text-transform: uppercase; font-size: 18px; font-weight: 700; text-align: center; color: #fafafa; border: none; }
 
@@ -179,4 +179,37 @@ body { margin: 0 auto; width: 100%; max-width: 1400px; }
 
 .about_us .content .row-center .col { display: -ms-flexbox; display: flex; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.about_us .content .row-center .col button { border: 7px solid #f1f1f1; border-radius: 50%; display: block; width: 169px; height: 169px; background-color: #fed136; font-family: "Montserrat", sans-serif; color: #fafafa; font-size: 18px; font-weight: 700; text-align: center; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7); }
+.about_us .content .row-center .col button { border: 7px solid #f1f1f1; border-radius: 50%; display: block; width: 169px; height: 169px; background-color: #fed136; font-family: "Montserrat", sans-serif; color: #fafafa; font-size: 18px; font-weight: 700; text-align: center; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7); text-transform: upparcase; }
+
+/* sekcja - OUR TEAM */
+.our_team { width: 100%; margin: auto; background-color: #f1f1f1; display: -ms-flexbox; display: flex; -ms-flex-flow: column wrap; flex-flow: column wrap; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.our_team .headings { display: -ms-flexbox; display: flex; -ms-flex-flow: column wrap; flex-flow: column wrap; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: justify; align-content: space-between; }
+
+.our_team .headings h2 { width: 100%; padding-bottom: 0; margin-bottom: 0; }
+
+.our_team .headings p { font-family: "Crimson Text", serif; font-size: 16px; text-align: center; width: 100%; padding-top: 0; margin-top: 0; }
+
+.our_team .row { width: 80%; display: -ms-flexbox; display: flex; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -ms-flex-pack: center; justify-content: center; -ms-flex-line-pack: center; align-content: center; }
+
+.our_team .row .col { display: -ms-flexbox; display: flex; -ms-flex-flow: column wrap; flex-flow: column wrap; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.our_team .row .col img { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; border: 7px solid #fafafa; border-radius: 50%; display: block; position: center; -o-object-fit: cover; object-fit: cover; width: 220px; height: 220px; margin: auto; }
+
+.our_team .row .col h3 { text-align: center; }
+
+.our_team .row .col p { font-family: "Roboto Slab", serif; color: #777777; text-align: center; }
+
+.our_team .row .col .social-media-icons { display: -ms-flexbox; display: flex; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 140px; height: 40px; }
+
+.our_team .row .col .social-media-icons button { margin: 0; border: hidden; background-color: transaprent; }
+
+.our_team .row .col .social-media-icons button .icon-btn { width: 40px; height: 40px; border: 3px solid #222222; color: #222222; background-color: transparent; border-radius: 50%; margin: 0; padding: 0; cursor: pointer; font-size: 21px; line-height: 40px; }
+
+.our_team .row .col .social-media-icons button .icon-btn .fa-twitter:hover { transition: .4s linear; color: #fafafa; background-color: #00aced; }
+
+.our_team .row .col .social-media-icons button .icon-btn .fa-facebook:hover { transition: .4s linear; color: #fafafa; background-color: #3b5998; }
+
+.our_team .row .col .social-media-icons button .icon-btn .fa-pinterest-p:hover { transition: .4s linear; color: #fafafa; background-color: #da2713; }
+
+.our_team .row .col .social-media-icons button .icon-btn .fa-google-plus-g:hover { transition: .4s linear; color: #fafafa; background-color: #d95232; }

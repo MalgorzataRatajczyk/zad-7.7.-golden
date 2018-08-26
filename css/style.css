@@ -1,7 +1,7 @@
 /* variables for colors */
 /* variables for fonts */
 /* class for heading h3 */
-.heading_h2, .services .headings h2, .portfolio .headings h2, .about_us .headings h2 {
+.heading_h2, .services .headings h2, .portfolio .headings h2, .about_us .headings h2, .our_team .headings h2 {
   font-family: "Montserrat", sans-serif;
   color: #222222;
   font-size: 40px;
@@ -11,7 +11,7 @@
   text-transform: uppercase;
 }
 
-.heading_h3, .services .row .col h3, .portfolio .gallery .col .description h3, .about_us .content .row-left-side .col .uppercase, .about_us .content .row-left-side .col .capitalize, .about_us .content .row-right-side .col .uppercase, .about_us .content .row-right-side .col .capitalize {
+.heading_h3, .services .content .col h3, .portfolio .gallery .col .description h3, .about_us .content .row-left-side .col .uppercase, .about_us .content .row-left-side .col .capitalize, .about_us .content .row-right-side .col .uppercase, .about_us .content .row-right-side .col .capitalize, .our_team .content .col h3 {
   font-family: "Montserrat", sans-serif;
   color: #222222;
   font-size: 18px;
@@ -270,8 +270,8 @@ body {
 
 .services .headings h2 {
   width: 100%;
-  margin-bottom: 0;
   padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .services .headings p {
@@ -279,11 +279,11 @@ body {
   font-size: 16px;
   text-align: center;
   width: 100%;
-  margin-top: 0;
   padding-top: 0;
+  margin-top: 0;
 }
 
-.services .row {
+.services .content {
   width: 80%;
   display: flex;
   flex-flow: row nowrap;
@@ -291,19 +291,19 @@ body {
   align-items: center;
 }
 
-.services .row .col {
+.services .content .col {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
 
-.services .row .col button {
+.services .content .col button {
   background-color: transparent;
   border: none;
 }
 
-.services .row .col button i .icon-btn {
+.services .content .col button i .icon-btn {
   width: 68px;
   height: 68px;
   color: #fed136;
@@ -314,12 +314,12 @@ body {
   text-align: center;
 }
 
-.services .row .col h3 {
+.services .content .col h3 {
   text-transform: capitalize;
   text-align: center;
 }
 
-.services .row .col p {
+.services .content .col p {
   font-family: "Roboto Slab", serif;
   color: #777777;
   font-size: 14px;
@@ -593,6 +593,172 @@ body {
   text-align: center;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
   text-transform: upparcase;
+}
+
+/* sekcja - OUR TEAM */
+.our_team {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.our_team .headings {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.our_team .headings h2 {
+  width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.our_team .headings p {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.our_team .content {
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.our_team .content .col {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.our_team .content .col img {
+  align-self: center;
+  border: 7px solid #fafafa;
+  border-radius: 50%;
+  display: block;
+  position: center;
+  object-fit: cover;
+  width: 220px;
+  height: 220px;
+  margin: auto;
+}
+
+.our_team .content .col h3 {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.our_team .content .col p {
+  font-family: "Roboto Slab", serif;
+  color: #777777;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.our_team .content .col .social-media-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  background-color: #f1f1f1;
+}
+
+.our_team .content .col .social-media-icons button {
+  margin: 0;
+  border: hidden;
+  background-color: inherit;
+}
+
+.our_team .content .col .social-media-icons button .icon-btn {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #222222;
+  color: #222222;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 21px;
+  line-height: 40px;
+}
+
+.our_team .content .col .social-media-icons button .fa-twitter:hover {
+  transition: .4s linear;
+  color: #fafafa;
+  background-color: #00aced;
+}
+
+.our_team .content .col .social-media-icons button .fa-facebook-f:hover {
+  transition: .4s linear;
+  color: #fafafa;
+  background-color: #3b5998;
+}
+
+.our_team .content .col .social-media-icons button .fa-pinterest-p:hover {
+  transition: .4s linear;
+  color: #fafafa;
+  background-color: #da2713;
+}
+
+.our_team .content .col .social-media-icons button .fa-google-plus-g:hover {
+  transition: .4s linear;
+  color: #fafafa;
+  background-color: #d95232;
+}
+
+.our_team .row p {
+  font-family: "Roboto Slab", serif;
+  color: #777777;
+  text-align: center;
+}
+
+/* section-MEADI */
+.media {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.media img {
+  padding: 10px;
+}
+
+.media img .envato {
+  width: 161px;
+  height: 30px;
+}
+
+.media img .wordpress {
+  width: 186px;
+  height: 42px;
+}
+
+.media img .tuts {
+  width: 131px;
+  height: 41px;
+}
+
+.media img .microlancer {
+  width: 167px;
+  height: 42px;
 }
 
 /*# sourceMappingURL=style.css.map */

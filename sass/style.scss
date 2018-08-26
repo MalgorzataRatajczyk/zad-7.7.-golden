@@ -197,19 +197,19 @@ body {
         h2 {
             @extend .heading_h2;
             width: 100%;
-            margin-bottom: 0;
             padding-bottom: 0;
+            margin-bottom: 0;
         }
         p {
             font-family: $italic;
             font-size: 16px;
             text-align: center;
             width: 100%;
-            margin-top: 0;
             padding-top: 0;
+            margin-top: 0;
         }
     }
-    .row {
+    .content {
         width: 80%;
         display: flex;
         flex-flow: row nowrap;
@@ -495,14 +495,12 @@ body {
     }
 }
 /* sekcja - OUR TEAM */ 
-.our_team {
-    width: 100%;
-    margin: auto;
-    background-color: $background-grey-color;
+.our_team {    
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    background-color: $background-grey-color;
     .headings {
         display: flex;
         flex-flow: column wrap;
@@ -524,7 +522,7 @@ body {
             margin-top: 0;
         }
     }
-    .row {
+    .content {
         width: 80%;
         display: flex;
         flex-flow: row nowrap;
@@ -549,11 +547,15 @@ body {
             h3 {
                 @extend .heading_h3;
                 text-align: center;
+                margin-bottom: 0;
+                padding-bottom: 0;
             }
             p {
                 font-family: $text-font;
                 color: $text-color;
                 text-align: center;
+                margin-top: 0;
+                padding-top: 0;
             }
             .social-media-icons {
                 display: flex;
@@ -562,45 +564,80 @@ body {
                 align-items: center;
                 width: 140px;
                 height: 40px;
+                background-color: $background-grey-color;
                 button {
                     margin: 0;
-	                border: hidden;
-                    background-color: transaprent;
+                    border: hidden;
+                    background-color: inherit;
                     .icon-btn {
                         width: 40px;
 	                    height: 40px;
                         border: 3px solid $headings-color;
                         color: $headings-color;
-	                    background-color: transparent;
 	                    border-radius: 50%;
 	                    margin: 0;
 	                    padding: 0;
 	                    cursor: pointer;
 	                    font-size: 21px;
                         line-height: 40px;
-                        .fa-twitter:hover {
-                            transition: .4s linear;
-                            color: rgb(250,250,250);
-                            background-color: $twitter_color;
-                        }
-                        .fa-facebook:hover {
-                            transition: .4s linear;
-                            color: rgb(250,250,250);
-                            background-color: $facebook-color;
-                        }
-                        .fa-pinterest-p:hover {
-                            transition: .4s linear;
-                            color: rgb(250,250,250);
-                            background-color: $pinterest_color;
-                        }
-                        .fa-google-plus-g:hover {
-                            transition: .4s linear;
-                            color: rgb(250,250,250);
-                            background-color: $googleplus-color;
-                        }
+                    }
+                    .fa-twitter:hover {
+                        transition: .4s linear;
+                        color: rgb(250,250,250);
+                        background-color: $twitter_color;
+                    }
+                    .fa-facebook-f:hover {
+                        transition: .4s linear;
+                        color: rgb(250,250,250);
+                        background-color: $facebook-color;
+                    }
+                    .fa-pinterest-p:hover {
+                        transition: .4s linear;
+                        color: rgb(250,250,250);
+                        background-color: $pinterest_color;
+                    }
+                    .fa-google-plus-g:hover {
+                        transition: .4s linear;
+                        color: rgb(250,250,250);
+                        background-color: $googleplus-color;
                     }
                 }
             }
         }
+    }
+    .row {
+        p {
+            font-family: $text-font;
+            color: $text-color;
+            text-align: center;
+        }
+    }
+}
+/* section-MEADI */ 
+.media {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    img {
+        padding: 10px;
+        .envato {
+            width: 161px;
+            height: 30px;
+        }
+        .wordpress {
+            width: 186px;
+            height: 42px;
+        }
+        .tuts {
+            width: 131px;
+            height: 41px;
+        }
+        .microlancer {
+            width: 167px;
+            height: 42px;
+        }       
     }
 }
