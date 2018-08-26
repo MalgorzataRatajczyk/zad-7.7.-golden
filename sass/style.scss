@@ -14,7 +14,7 @@ $text-font: 'Roboto Slab', serif;
 $italic: 'Crimson Text', serif;
 
 
-/* class for heading h3 */
+/* class */
 .heading_h2 {
     font-family: $headings-font;
     color:  $headings-color;
@@ -69,31 +69,18 @@ body {
     max-width: 1400px;
 }
 
-.col-md-1 {width: 8.33%;}
-.col-md-2 {width: 16.66%;}
-.col-md-3 {width: 25%;}
-.col-md-4 {width: 33.33%;}
-.col-md-5 {width: 41.66%;}
-.col-md-6 {width: 50%;}
-.col-md-7 {width: 58.33%;}
-.col-md-8 {width: 66.66%;}
-.col-md-9 {width: 75%;}
-.col-md-10 {width: 83.33%;}
-.col-md-11 {width: 91.66%;}
-.col-md-12 {width: 100%;}
-
-.col-lg-1 {width: 8.33%;}
-.col-lg-2 {width: 16.66%;}
-.col-lg-3 {width: 25%;}
-.col-lg-4 {width: 33.33%;}
-.col-lg-5 {width: 41.66%;}
-.col-lg-6 {width: 50%;}
-.col-lg-7 {width: 58.33%;}
-.col-lg-8 {width: 66.66%;}
-.col-lg-9 {width: 75%;}
-.col-lg-10 {width: 83.33%;}
-.col-lg-11 {width: 91.66%;}
-.col-lg-12 {width: 100%;}
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
 
 .container {
     width: 100%;
