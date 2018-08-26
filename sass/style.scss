@@ -181,6 +181,8 @@ body {
         justify-content: center;
         align-items: center;
         align-content: space-between;
+        margin-bottom: 50px;
+        margin-top: 50px;
         h2 {
             @extend .heading_h2;
             width: 100%;
@@ -189,7 +191,7 @@ body {
         }
         p {
             font-family: $italic;
-            font-size: 16px;
+            font-size: 18px;
             text-align: center;
             width: 100%;
             padding-top: 0;
@@ -202,6 +204,7 @@ body {
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
+        margin-bottom: 50px;
         .col-m-4 {
             display: flex;
             flex-flow: column wrap;
@@ -225,6 +228,8 @@ body {
             }
             h3 {
                 @extend .heading_h3;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
             }
             p {
                 font-family: $text-font;
@@ -249,6 +254,8 @@ body {
         justify-content: center;
         align-items: center;
         align-content: space-between;
+        margin-bottom: 50px;
+        margin-top: 50px;
         h2 {
             @extend .heading_h2;
             width: 100%;
@@ -257,10 +264,10 @@ body {
         }
         p {
             font-family: $italic;
-            font-size: 16px;
+            font-size: 18px;
             text-align: center;
             width: 100%;
-            padding-top: 0;
+            padding-top: 0x;
             margin-top: 0;
         }
     }
@@ -294,12 +301,16 @@ body {
                 background-color: rgb(250,250,250);
                 h3 {
                     @extend .heading_h3;
+                    margin-bottom: 5px;
+                    padding-bottom: 0;
                 }
                 p {
                     font-family: $italic;
-                    font-size: 16px;
+                    font-size: 18px;
                     text-align: center; 
-                    text-transform: capitalize;                  
+                    text-transform: capitalize;
+                    margin-top: 0;
+                    padding-top: 0;                  
                 }
             }
         }
@@ -318,6 +329,8 @@ body {
         justify-content: center;
         align-items: center;
         align-content: space-between;
+        margin-bottom: 50px;
+        margin-top: 50px;
         h2 {
             @extend .heading_h2;
             width: 100%;
@@ -326,7 +339,7 @@ body {
         }
         p {
             font-family: $italic;
-            font-size: 16px;
+            font-size: 18px;
             text-align: center;
             width: 100%;
             padding-top: 0;
@@ -346,6 +359,8 @@ body {
             justify-content: flex-start;
             align-items: center;
             align-self: flex-start;
+            margin-bottom: 25px;
+            margin-top: 25px;
             .col-m-8 {
                 display: flex;
                 flex-flow: column wrap;
@@ -400,6 +415,8 @@ body {
             justify-content: flex-end;
             align-items: center;
             align-self: flex-end;
+            margin-bottom: 25px;
+            margin-top: 25px;
             .col-m-4 {
                 display: flex;
                 flex-flow: column;
@@ -453,6 +470,7 @@ body {
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
+            margin-bottom: 100px;
             .col-m-12 {
                 display: flex;
                 flex-flow: row nowrap;
@@ -490,6 +508,8 @@ body {
         justify-content: center;
         align-items: center;
         align-content: space-between;
+        margin-bottom: 25px;
+        margin-top: 50px;
         h2 {
             @extend .heading_h2;
             width: 100%;
@@ -498,7 +518,7 @@ body {
         }
         p {
             font-family: $italic;
-            font-size: 16px;
+            font-size: 18px;
             text-align: center;
             width: 100%;
             padding-top: 0;
@@ -592,6 +612,8 @@ body {
             font-family: $text-font;
             color: $text-color;
             text-align: center;
+            margin-top: 25px;
+            margin-bottom: 50px;
         }
     }
 }
@@ -645,7 +667,7 @@ body {
         }
         p {
             font-family: $italic;
-            font-size: 16px;
+            font-size: 18px;
             text-align: center;
             width: 100%;
             padding-top: 0;
@@ -665,7 +687,6 @@ body {
             justify-content: center;
             align-items: center;
             form {
-                border: 2px dotted red;
                 display: flex;
 	            flex-flow: column wrap;
 	            justify-content: flex-start;
@@ -819,11 +840,11 @@ body {
                 justify-content: center;
                 align-items: center;
                 .photo {
-                    width: 100%;
-                    height: 100%;
+                    width: 90%;
+                    height: 90%;
                 }
                 .description {
-                    width: 100%;
+                    width: 90%;
                     height: auto;
                 }
             }
@@ -844,17 +865,20 @@ body {
                     align-items: center;
                     .uppercase {
                         align-self: center;
+                        text-align: center;
                     }
                     .capitalize {
                         align-self: center;
+                        text-align: center;
                     }
                     p {
                         align-self: center;
+                        text-align: center;
                     }
                 }
                 .col-s-12 {
                     display: flex;
-                    flex-flow: column;
+                    flex-flow: column ;
                     justify-content: center;
                     align-items: center;
                     img {
@@ -865,7 +889,7 @@ body {
             }
             .row-right-side {
                 width: 100%;
-                flex-flow: column wrap;
+                flex-flow: column-reverse;
                 justify-content: center;
                 align-self: center;
                 .col-s-12 {
@@ -879,12 +903,15 @@ body {
                     justify-content: center;
                     .uppercase {
                         align-self: center;
+                        text-align: center;
                     }
                     .capitalize {
                         align-self: center;
+                        text-align: center;
                     }
                     p {
                         align-self: center;
+                        text-align: center;
                     }
                 }
             }
@@ -900,34 +927,13 @@ body {
                 flex-flow: column;
                 justify-content: center;
                 align-items: center;
+                margin-bottom: 20%;
                 img {
                     width: 100%;
                     height: 100%;
                 }
                 .social-media-icons {
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: center;
-                    align-items: center;
-                    width: 140px;
-                    height: 40px;
-                    background-color: $background-grey-color;
                     button {
-                        margin: 0;
-                        border: hidden;
-                        background-color: inherit;
-                        .icon-btn {
-                            width: 40px;
-	                        height: 40px;
-                            border: 3px solid $headings-color;
-                            color: $headings-color;
-	                        border-radius: 50%;
-	                        margin: 0;
-	                        padding: 0;
-	                        cursor: pointer;
-	                        font-size: 21px;
-                            line-height: 40px;
-                        }
                         .fa-twitter:hover {
                             transition: none;
                         }
@@ -952,6 +958,7 @@ body {
         img {
             width: 100%;
             height: auto;
+            margin-bottom: 10%;
             .envato {
                 width: 100%;
                 height: auto;
@@ -985,7 +992,7 @@ body {
                     align-items: center;
 	                height: auto;          
                     textarea {
-                        height: auto;
+                        height: 80%;
                     }                
                 }
             }
