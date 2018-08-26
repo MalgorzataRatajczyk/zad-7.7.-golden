@@ -727,13 +727,13 @@ body {
     width: 100%;
     margin-top: 20px;
     .row {
-        .col {
+        .col-m-4 {
             text-align: center;
             p {
                 font-family: $text-font;
             }
         }
-        .col {
+        .col-m-4 {
             text-align: center;
             button {
                 margin: 0;

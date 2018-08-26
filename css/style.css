@@ -821,25 +821,25 @@ body {
   margin-top: 20px;
 }
 
-.footer .row .col {
+.footer .row .col-m-4 {
   text-align: center;
 }
 
-.footer .row .col p {
+.footer .row .col-m-4 p {
   font-family: "Roboto Slab", serif;
 }
 
-.footer .row .col {
+.footer .row .col-m-4 {
   text-align: center;
 }
 
-.footer .row .col button {
+.footer .row .col-m-4 button {
   margin: 0;
   border: hidden;
   background-color: inherit;
 }
 
-.footer .row .col button .icon-btn {
+.footer .row .col-m-4 button .icon-btn {
   width: 40px;
   height: 40px;
   border: 3px solid #222222;
@@ -853,27 +853,23 @@ body {
   line-height: 45px;
 }
 
-.footer .row .col button .fa-twitter:hover {
+.footer .row .col-m-4 button .fa-twitter:hover {
   transition: .4s linear;
-  color: #fafafa;
   background-color: #00aced;
 }
 
-.footer .row .col button .fa-facebook-f:hover {
+.footer .row .col-m-4 button .fa-facebook-f:hover {
   transition: .4s linear;
-  color: #fafafa;
   background-color: #3b5998;
 }
 
-.footer .row .col button .fa-pinterest-p:hover {
+.footer .row .col-m-4 button .fa-pinterest-p:hover {
   transition: .4s linear;
-  color: #fafafa;
   background-color: #da2713;
 }
 
-.footer .row .col button .fa-google-plus-g:hover {
+.footer .row .col-m-4 button .fa-google-plus-g:hover {
   transition: .4s linear;
-  color: #fafafa;
   background-color: #d95232;
 }
 
