@@ -917,13 +917,25 @@ body {
   .services .content {
     width: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
+  }
+  .services .content .col-s-12 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
   }
   /* sekcja PORTFOLIO */
   .portfolio .gallery {
     width: 100%;
     display: flex;
     flex-flow: column wrap;
+  }
+  .portfolio .gallery .col-s-12 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
   }
   .portfolio .gallery .col-s-12 .photo {
     width: 100%;
@@ -941,7 +953,10 @@ body {
     align-self: center;
   }
   .about_us .content .row-left-side .col-s-12 {
+    display: flex;
+    flex-flow: column;
     justify-content: center;
+    align-items: center;
   }
   .about_us .content .row-left-side .col-s-12 .uppercase {
     align-self: center;
@@ -953,7 +968,10 @@ body {
     align-self: center;
   }
   .about_us .content .row-left-side .col-s-12 {
+    display: flex;
+    flex-flow: column;
     justify-content: center;
+    align-items: center;
   }
   .about_us .content .row-left-side .col-s-12 img {
     width: 100%;
@@ -990,7 +1008,10 @@ body {
     flex-flow: column;
   }
   .our_team .content .col-s-12 {
+    display: flex;
     flex-flow: column;
+    justify-content: center;
+    align-items: center;
   }
   .our_team .content .col-s-12 img {
     width: 100%;
@@ -1057,6 +1078,25 @@ body {
   }
   .media img .microlancer {
     width: 100%;
+    height: auto;
+  }
+  /* section CONTACT-US */
+  .contact_us .contact_form {
+    width: 100%;
+    flex-flow: column wrap;
+  }
+  .contact_us .contact_form .col-s-12 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_us .contact_form .col-s-12 form {
+    justify-content: centert;
+    align-items: center;
+    height: auto;
+  }
+  .contact_us .contact_form .col-s-12 form textarea {
     height: auto;
   }
 }
