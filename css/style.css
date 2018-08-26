@@ -1,13 +1,14 @@
 /* variables for colors */
 /* variables for fonts */
 /* class for heading h3 */
-.heading_h2 {
+.heading_h2, .services .headings h2 {
   font-family: "Montserrat", sans-serif;
   color: #222222;
   font-size: 40px;
   font-weight: 700;
   line-height: 75px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .heading_h3 {
@@ -155,6 +156,11 @@ body {
   width: 100%;
 }
 
+.container {
+  width: 100%;
+  max-width: 1400px;
+}
+
 /* header */
 .jumbotron {
   background-image: url("../images/Background_Image.png");
@@ -217,7 +223,7 @@ body {
   width: 100%;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -247,5 +253,40 @@ body {
 }
 
 /* section SERVICES */
+.services {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .headings {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.services .headings p {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.services .row {
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .row .col {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 /*# sourceMappingURL=style.css.map */
