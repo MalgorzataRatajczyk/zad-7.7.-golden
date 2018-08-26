@@ -294,6 +294,11 @@ body {
   align-items: center;
 }
 
+.services .row .col button {
+  background-color: transparent;
+  border: none;
+}
+
 .services .row .col button i .icon-btn {
   width: 68px;
   height: 68px;
