@@ -53,11 +53,9 @@ body {
 
 [class*='col-'] {
   min-height: 1px;
-  border: 1px solid green;
 }
 
 .row {
-  border: 1px solid purple;
   width: 100%;
   max-width: 1400px;
 }
