@@ -812,13 +812,11 @@ body {
             .col-s-12 {
                 .photo {
                     width: 100%;
-                    height:100%;
+                    height: 100%;
                 }
                 .description {
-                    margin: 0 10px 20px 10px;
-                    width: 291px;
-                    height: 93px;
-                    background-color: rgb(250,250,250);
+                    width: 100%;
+                    height: auto;
                 }
             }
         }
@@ -828,7 +826,6 @@ body {
         .content {
             .row-left-side {        
                 width: 100%;
-                display: flex;
                 flex-flow: column wrap;
                 justify-content: center;
                 align-self: center;
@@ -854,7 +851,6 @@ body {
             }
             .row-right-side {
                 width: 100%;
-                display: flex;
                 flex-flow: column wrap;
                 justify-content: center;
                 align-self: center;
@@ -875,6 +871,58 @@ body {
                     }
                     p {
                         align-self: center;
+                    }
+                }
+            }
+        }
+    }
+    /* sekcja - OUR TEAM */ 
+    .our_team {    
+        .content {
+            width: 100%;
+            flex-flow: column;
+            .col-s-12 {
+                flex-flow: column;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .social-media-icons {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    width: 140px;
+                    height: 40px;
+                    background-color: $background-grey-color;
+                    button {
+                        margin: 0;
+                        border: hidden;
+                        background-color: inherit;
+                        .icon-btn {
+                            width: 40px;
+	                        height: 40px;
+                            border: 3px solid $headings-color;
+                            color: $headings-color;
+	                        border-radius: 50%;
+	                        margin: 0;
+	                        padding: 0;
+	                        cursor: pointer;
+	                        font-size: 21px;
+                            line-height: 40px;
+                        }
+                        .fa-twitter:hover {
+                            transition: none;
+                        }
+                        .fa-facebook-f:hover {
+                            transition: none;
+                        }
+                        .fa-pinterest-p:hover {
+                            transition: none;
+                        }
+                        .fa-google-plus-g:hover {
+                            transition: none;
+                        }
                     }
                 }
             }
