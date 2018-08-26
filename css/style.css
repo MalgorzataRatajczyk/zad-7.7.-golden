@@ -1034,6 +1034,31 @@ body {
   .our_team .content .col-s-12 .social-media-icons button .fa-google-plus-g:hover {
     transition: none;
   }
+  /* section-MEADI */
+  .media {
+    height: auto;
+    flex-flow: column wrap;
+  }
+  .media img {
+    width: 100%;
+    height: auto;
+  }
+  .media img .envato {
+    width: 100%;
+    height: auto;
+  }
+  .media img .wordpress {
+    width: 100%;
+    height: auto;
+  }
+  .media img .tuts {
+    width: 100%;
+    height: auto;
+  }
+  .media img .microlancer {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* ostatni nawias */

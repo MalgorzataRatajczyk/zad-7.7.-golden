@@ -928,6 +928,32 @@ body {
             }
         }
     }
+    /* section-MEADI */ 
+    .media {
+        height: auto;
+        flex-flow: column wrap;
+        img {
+            width: 100%;
+            height: auto;
+            .envato {
+                width: 100%;
+                height: auto;
+            }
+            .wordpress {
+                width: 100%;
+                height: auto;
+            }
+            .tuts {
+                width: 100%;
+                height: auto;
+            }
+            .microlancer {
+                width: 100%;
+                height: auto;
+            }       
+        }
+    }
+
 
 
 
