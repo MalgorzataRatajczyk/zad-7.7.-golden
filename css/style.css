@@ -819,18 +819,29 @@ body {
 .footer {
   width: 100%;
   margin-top: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer .row .col-m-4 {
-  text-align: center;
+.footer .row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer .row .col-m-4 p {
   font-family: "Roboto Slab", serif;
+  color: #777777;
 }
 
 .footer .row .col-m-4 {
-  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer .row .col-m-4 button {
