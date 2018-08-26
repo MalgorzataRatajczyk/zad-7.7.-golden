@@ -196,11 +196,13 @@ body {
         align-content: space-between;
         h2 {
             @extend .heading_h2;
+            width: 100%;
         }
         p {
             font-family: $italic;
             font-size: 16px;
             text-align: center;
+            width: 100%;
         }
     }
     .row {
@@ -219,8 +221,8 @@ body {
                     .icon-btn {
                         width: 68px;
                         height: 68px;
-                        color: $yellow-color;
-                        border: 3px solid $yellow-color;
+                        color: $yellow;
+                        border: 3px solid $yellow;
                         border-radius: 50%;
                         font-size: 40px;
                         line-height: 68px;
@@ -231,6 +233,7 @@ body {
             h3 {
                 @extend .heading_h3;
                 text-transform: capitalize;
+                text-align: center;
             }
             p {
                 font-family: $text-font;
@@ -243,3 +246,69 @@ body {
     }
 }
 /* section PORTFOLIO */
+.portfolio {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-grey-color;
+    .headings {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            @extend .heading_h2;
+            width: 100%;
+        }
+        p {
+            font-family: $italic;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .gallery {
+        width: 80%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+        .col {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            .photo {
+                width: 291px;
+                height: 301px;
+                background-color: rgb(250,250,250);
+                img {
+                    position: center;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    margin: auto;
+                }
+            }
+            .description {
+                margin: 0 10px 20px 10px;
+                width: 291px;
+                height: 93px;
+                background-color: rgb(250,250,250);
+                h3 {
+                    @extend .heading_h3;
+                    text-transform: capitalize;
+                    text-align: center;
+                }
+                p {
+                    font-family: $italic;
+                    font-size: 16px;
+                    text-align: center; 
+                    text-transform: capitalize;                  
+                }
+            }
+        }
+
+    }
+}

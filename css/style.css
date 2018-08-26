@@ -1,7 +1,7 @@
 /* variables for colors */
 /* variables for fonts */
 /* class for heading h3 */
-.heading_h2, .services .headings h2 {
+.heading_h2, .services .headings h2, .portfolio .headings h2 {
   font-family: "Montserrat", sans-serif;
   color: #222222;
   font-size: 40px;
@@ -11,7 +11,7 @@
   text-transform: uppercase;
 }
 
-.heading_h3 {
+.heading_h3, .services .row .col h3, .portfolio .gallery .col .description h3 {
   font-family: "Montserrat", sans-serif;
   color: #222222;
   font-size: 18px;
@@ -268,10 +268,15 @@ body {
   align-content: space-between;
 }
 
+.services .headings h2 {
+  width: 100%;
+}
+
 .services .headings p {
   font-family: "Crimson Text", serif;
   font-size: 16px;
   text-align: center;
+  width: 100%;
 }
 
 .services .row {
@@ -287,6 +292,105 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+}
+
+.services .row .col button i .icon-btn {
+  width: 68px;
+  height: 68px;
+  color: #fed136;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  font-size: 40px;
+  line-height: 68px;
+  text-align: center;
+}
+
+.services .row .col h3 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.services .row .col p {
+  font-family: "Roboto Slab", serif;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* section PORTFOLIO */
+.portfolio {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.portfolio .headings {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .headings h2 {
+  width: 100%;
+}
+
+.portfolio .headings p {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.portfolio .gallery {
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.portfolio .gallery .col {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .gallery .col .photo {
+  width: 291px;
+  height: 301px;
+  background-color: #fafafa;
+}
+
+.portfolio .gallery .col .photo img {
+  position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.portfolio .gallery .col .description {
+  margin: 0 10px 20px 10px;
+  width: 291px;
+  height: 93px;
+  background-color: #fafafa;
+}
+
+.portfolio .gallery .col .description h3 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.portfolio .gallery .col .description p {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */
