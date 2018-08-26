@@ -1,7 +1,7 @@
 /* variables for colors */
 /* variables for fonts */
 /* class for heading h3 */
-.heading_h2, .services .headings h2, .portfolio .headings h2, .about_us .headings h2, .our_team .headings h2 {
+.heading_h2, .services .headings h2, .portfolio .headings h2, .about_us .headings h2, .our_team .headings h2, .contact_us .headings h2 {
   font-family: "Montserrat", sans-serif;
   color: #222222;
   font-size: 40px;
@@ -759,6 +759,30 @@ body {
 .media img .microlancer {
   width: 167px;
   height: 42px;
+}
+
+/* section CONTACT-US */
+.contact_us .headings {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.contact_us .headings h2 {
+  width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.contact_us .headings p {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

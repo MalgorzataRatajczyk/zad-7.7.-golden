@@ -641,3 +641,90 @@ body {
         }       
     }
 }
+/* section CONTACT-US */ 
+.contact_us {
+    .headings {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        h2 {
+            @extend .heading_h2;
+            width: 100%;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        p {
+            font-family: $italic;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+    .contact_form {
+        width: 80%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        .col {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            form {
+                border: 2px dotted red;
+                display: flex;
+	            flex-flow: column wrap;
+	            justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+	            padding: 20px;
+	            height: 300px;
+	            input {
+                    padding: 5px;
+	                margin: 5px 0;
+	                background-color: rgb(250,250,250);
+	                color: rgb(0,0,0);
+	                display: block;
+                    width: 100%;
+                    height: 50px;
+                    transition: .5s all;
+                    font-family: $text-font;
+                    text-align: left;
+                }
+                input:required {
+                    border-color: rgb(0,0,0);
+                    outline-color: $yellow;
+                } 
+                input:placeholder-shown {
+                    font-family: $headings-font;
+                    text-transform: uppercase;
+                }          
+                textarea {                    
+                    width: 100%;
+                    height: 200px;
+                    padding: 5px;
+                    margin: 5px 0;
+                    display: block;
+                }                
+            }
+        }
+    }
+    .sending_button {
+        width: 100%;
+        height: 150px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        button {
+            @extend .yellow-button;         
+        }
+    }
+}
