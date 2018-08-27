@@ -17,7 +17,7 @@ $italic: 'Crimson Text', serif;
 /* global classes */
 .flex_column {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 }

@@ -1,9 +1,16 @@
 /* variables for colors */
 /* variables for fonts */
 /* global classes */
-.flex_column, .services, .portfolio, .portfolio .gallery .col-m-4, .about_us, .about_us .content, .about_us .content .row-center, .our_team, .our_team .content .col-m-4, .our_team .row, .contact_us {
+.flex_column, .services, .services .content .col-m-4, .portfolio, .portfolio .gallery .col-m-4, .about_us, .about_us .content, .about_us .content .row-center, .our_team, .our_team .content .col-m-4, .our_team .row, .contact_us {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_row, .services .content, .portfolio .gallery, .our_team .content, .our_team .content .col-m-4 .social-media-icons, .media, .contact_us .contact_form, .contact_us .contact_form .col-m-6, .footer, .footer .row, .footer .row .col-m-4 {
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -236,18 +243,7 @@ body {
 /* section SERVICES */
 .services .content {
   width: 80%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 50px;
-}
-
-.services .content .col-m-4 {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .services .content .col-m-4 button {
@@ -286,10 +282,6 @@ body {
 
 .portfolio .gallery {
   width: 80%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-content: center;
 }
 
 .portfolio .gallery .col-m-4 .photo {
@@ -456,6 +448,7 @@ body {
 
 .about_us .content .row-center {
   width: 100%;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -489,10 +482,6 @@ body {
 
 .our_team .content {
   width: 80%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-content: center;
 }
 
 .our_team .content .col-m-4 img {
@@ -521,10 +510,6 @@ body {
 }
 
 .our_team .content .col-m-4 .social-media-icons {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
   width: 140px;
   height: 40px;
   background-color: #f1f1f1;
@@ -589,10 +574,6 @@ body {
 .media {
   height: 130px;
   width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .media img {
@@ -634,17 +615,6 @@ body {
 
 .contact_us .contact_form {
   width: 80%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact_us .contact_form .col-m-6 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact_us .contact_form .col-m-6 form {
@@ -693,8 +663,7 @@ body {
   height: 150px;
   margin: auto;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -703,29 +672,11 @@ body {
 .footer {
   width: 100%;
   margin-top: 20px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer .row {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer .row .col-m-4 p {
   font-family: "Roboto Slab", serif;
   color: #777777;
-}
-
-.footer .row .col-m-4 {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer .row .col-m-4 button {
