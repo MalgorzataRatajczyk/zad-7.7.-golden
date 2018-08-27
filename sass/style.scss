@@ -21,6 +21,12 @@ $italic: 'Crimson Text', serif;
     justify-content: center;
     align-items: center;
 }
+.flex_row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
 .section_heading_styles {
     display: flex;
     flex-flow: column wrap;
@@ -42,7 +48,6 @@ $italic: 'Crimson Text', serif;
     padding-bottom: 0;
     margin-bottom: 0;
 }
-
 .subheading_styles {
     width: 100%;
     font-family: $italic;
@@ -51,7 +56,6 @@ $italic: 'Crimson Text', serif;
     padding-top: 0;
     margin-top: 0;
 }
-
 .heading_h3 {
     font-family: $headings-font;
     color:  $headings-color;
@@ -210,17 +214,11 @@ body {
         }
     }
     .content {
+        @extend .flex_row;
         width: 80%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 50px;
         .col-m-4 {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
+            @extend .flex_column;
             button {
                 background-color: transparent;
                 border: none;
@@ -267,10 +265,7 @@ body {
     }
     .gallery {
         width: 80%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-content: center;
+        @extend .flex_row;
         .col-m-4 {
             @extend .flex_column;
             .photo {
@@ -438,6 +433,7 @@ body {
         .row-center {
             @extend .flex_column;
             width: 100%;
+            margin-top: 50px;
             margin-bottom: 100px;
             .col-m-12 {
                 display: flex;
@@ -478,10 +474,7 @@ body {
     }
     .content {
         width: 80%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-content: center;
+        @extend .flex_row;
         .col-m-4 {
             @extend .flex_column;
             img {
@@ -508,10 +501,7 @@ body {
                 padding-top: 0;
             }
             .social-media-icons {
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
+                @extend .flex_row;
                 width: 140px;
                 height: 40px;
                 background-color: $background-grey-color;
@@ -571,10 +561,7 @@ body {
 .media {
     height: 130px;
     width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+    @extend .flex_row;
     img {
         padding: 10px;
         .envato {
@@ -612,15 +599,9 @@ body {
     }
     .contact_form {
         width: 80%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
+        @extend .flex_row;
         .col-m-6 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            @extend .flex_row;
             form {
                 display: flex;
 	            flex-flow: column wrap;
@@ -664,8 +645,7 @@ body {
         height: 150px;
         margin: auto;
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         button {
@@ -677,15 +657,9 @@ body {
 .footer {
     width: 100%;
     margin-top: 20px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+    @extend .flex_row;
     .row {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
+        @extend .flex_row;
         .col-m-4 {
             p {
                 font-family: $text-font;
@@ -693,10 +667,7 @@ body {
             }
         }
         .col-m-4 {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center; 
+            @extend .flex_row;
             button {
                 margin: 0;
 	            border: hidden;
