@@ -724,13 +724,36 @@ body {
 
      /* seckcja SERVICES */
 
-     .main_heading {
+    .main_heading {
         font-size: 30px;
-     }
-     .top_navigation {
-        display: flex;
-        flex-flow: column;
-     }
+    }
+
+    .jumbotron {
+        .top_navigation {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            .top_menu {
+                display: flex;
+                justify-content: center;
+                ul {
+                    display: block;
+                    li {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .welcome_text {        
+            .italic {
+                font-size: 30px;
+            }
+            .uppercase {
+                font-size: 50px;
+                font-weight: 400;
+            }
+        }
+    }
     .services {
         .content {
             width: 100%;

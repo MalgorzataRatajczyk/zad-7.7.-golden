@@ -763,9 +763,27 @@ body {
   .main_heading {
     font-size: 30px;
   }
-  .top_navigation {
+  .jumbotron .top_navigation {
     display: flex;
     flex-flow: column;
+    justify-content: center;
+  }
+  .jumbotron .top_navigation .top_menu {
+    display: flex;
+    justify-content: center;
+  }
+  .jumbotron .top_navigation .top_menu ul {
+    display: block;
+  }
+  .jumbotron .top_navigation .top_menu ul li {
+    display: block;
+  }
+  .jumbotron .welcome_text .italic {
+    font-size: 30px;
+  }
+  .jumbotron .welcome_text .uppercase {
+    font-size: 50px;
+    font-weight: 400;
   }
   .services .content {
     width: 100%;
