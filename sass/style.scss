@@ -15,7 +15,12 @@ $italic: 'Crimson Text', serif;
 
 
 /* global classes */
-
+.flex_column {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
 .section_heading_styles {
     display: flex;
     flex-flow: column wrap;
@@ -194,10 +199,7 @@ body {
 }
 /* section SERVICES */
 .services {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @extend .flex_column;
     .section_heading {
         @extend .section_heading_styles;
         .main_heading {
@@ -252,10 +254,7 @@ body {
 }
 /* section PORTFOLIO */
 .portfolio {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @extend .flex_column;
     background-color: $background-grey-color;
     .section_heading {
         @extend .section_heading_styles;
@@ -273,10 +272,7 @@ body {
         justify-content: center;
         align-content: center;
         .col-m-4 {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
+            @extend .flex_column;
             .photo {
                 width: 291px;
                 height: 301px;
@@ -314,10 +310,7 @@ body {
 }
 /* section - ABOUT US */ 
 .about_us {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @extend .flex_column;
     .section_heading {
         @extend .section_heading_styles;
         .main_heading {
@@ -328,11 +321,8 @@ body {
         }
     }
     .content {
+        @extend .flex_column;
         width: 100%;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;    
         .row-left-side {        
             width: 60%;
             display: flex;
@@ -446,11 +436,8 @@ body {
             }
         }
         .row-center {
+            @extend .flex_column;
             width: 100%;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
             margin-bottom: 100px;
             .col-m-12 {
                 display: flex;
@@ -478,10 +465,7 @@ body {
 }
 /* sekcja - OUR TEAM */ 
 .our_team {    
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @extend .flex_column;
     background-color: $background-grey-color;
     .section_heading {
         @extend .section_heading_styles;
@@ -499,10 +483,7 @@ body {
         justify-content: center;
         align-content: center;
         .col-m-4 {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
+            @extend .flex_column;
             img {
                 align-self: center;
                 border: 7px solid rgb(250,250,250);
@@ -575,6 +556,8 @@ body {
         }
     }
     .row {
+        @extend .flex_column;
+        width: 100%;
         p {
             font-family: $text-font;
             color: $text-color;
@@ -614,10 +597,7 @@ body {
 }
 /* section CONTACT-US */ 
 .contact_us {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @extend .flex_column;
     background-color: rgb(0,0,0);
     .section_heading {
         @extend .section_heading_styles;
