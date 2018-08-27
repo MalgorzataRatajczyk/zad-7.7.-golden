@@ -1,7 +1,18 @@
 /* variables for colors */
 /* variables for fonts */
-/* class */
-.heading_h2, .services .headings h2, .portfolio .headings h2, .about_us .headings h2, .our_team .headings h2, .contact_us .headings h2 {
+/* global classes */
+.section_heading_styles, .services .section_heading, .portfolio .section_heading, .about_us .section_heading, .our_team .section_heading, .contact_us .section_heading {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.main_heading_styles, .services .section_heading .main_heading, .portfolio .section_heading .main_heading, .about_us .section_heading .main_heading, .our_team .section_heading .main_heading, .contact_us .section_heading .main_heading {
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   color: #222222;
   font-size: 40px;
@@ -9,6 +20,17 @@
   line-height: 75px;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.subheading_styles, .services .section_heading .subheading, .portfolio .section_heading .subheading, .about_us .section_heading .subheading, .our_team .section_heading .subheading, .contact_us .section_heading .subheading {
+  width: 100%;
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .heading_h3, .services .content .col-m-4 h3, .portfolio .gallery .col-m-4 .description h3, .about_us .content .row-left-side .col-m-8 .uppercase, .about_us .content .row-left-side .col-m-8 .capitalize, .about_us .content .row-right-side .col-m-8 .uppercase, .about_us .content .row-right-side .col-m-8 .capitalize, .our_team .content .col-m-4 h3 {
@@ -212,31 +234,6 @@ body {
   align-items: center;
 }
 
-.services .headings {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-.services .headings h2 {
-  width: 100%;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.services .headings p {
-  font-family: "Crimson Text", serif;
-  font-size: 18px;
-  text-align: center;
-  width: 100%;
-  padding-top: 0;
-  margin-top: 0;
-}
-
 .services .content {
   width: 80%;
   display: flex;
@@ -289,31 +286,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f1f1f1;
-}
-
-.portfolio .headings {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-.portfolio .headings h2 {
-  width: 100%;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.portfolio .headings p {
-  font-family: "Crimson Text", serif;
-  font-size: 18px;
-  text-align: center;
-  width: 100%;
-  padding-top: 0x;
-  margin-top: 0;
 }
 
 .portfolio .gallery {
@@ -372,31 +344,6 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-}
-
-.about_us .headings {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-.about_us .headings h2 {
-  width: 100%;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.about_us .headings p {
-  font-family: "Crimson Text", serif;
-  font-size: 18px;
-  text-align: center;
-  width: 100%;
-  padding-top: 0;
-  margin-top: 0;
 }
 
 .about_us .content {
@@ -570,31 +517,6 @@ body {
   background-color: #f1f1f1;
 }
 
-.our_team .headings {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-  margin-bottom: 25px;
-  margin-top: 50px;
-}
-
-.our_team .headings h2 {
-  width: 100%;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.our_team .headings p {
-  font-family: "Crimson Text", serif;
-  font-size: 18px;
-  text-align: center;
-  width: 100%;
-  padding-top: 0;
-  margin-top: 0;
-}
-
 .our_team .content {
   width: 80%;
   display: flex;
@@ -739,28 +661,11 @@ body {
   background-color: black;
 }
 
-.contact_us .headings {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-}
-
-.contact_us .headings h2 {
-  width: 100%;
-  padding-bottom: 0;
-  margin-bottom: 0;
+.contact_us .section_heading .main_heading {
   color: #fafafa;
 }
 
-.contact_us .headings p {
-  font-family: "Crimson Text", serif;
-  font-size: 18px;
-  text-align: center;
-  width: 100%;
-  padding-top: 0;
-  margin-top: 0;
+.contact_us .section_heading .subheading {
   color: #fafafa;
 }
 
