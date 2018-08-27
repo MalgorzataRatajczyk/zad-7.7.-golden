@@ -129,10 +129,11 @@ body {
     background-repeat: no-repeat;
     position: relative;
     .top_navigation {
-        display: block;
-        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
         .logo {
-            float: left;
+            width: 60%;
+            align-self: flex-start;
             .logo-text {
                 font-family:'Great Vibes', cursive;
                 font-size: 26px;
@@ -142,8 +143,8 @@ body {
             }
         }
         .top_menu {
-            float: right;
-            width: 480px;
+            width: 60%;
+            align-self: flex-start;
             height: 15px;
             ul {
                 display: inline-block;
@@ -655,9 +656,10 @@ body {
 }
 /* section - footer */
 .footer {
-    width: 100%;
+    width: 80%;
     margin-top: 20px;
     @extend .flex_row;
+    justify-content: flex-start;
     .row {
         @extend .flex_row;
         .col-m-4 {
@@ -721,6 +723,9 @@ body {
     .col-s-12 {width: 100%;}
 
      /* seckcja SERVICES */
+     .main_heading {
+         font-size: 30px;
+     }
     .services {
         .content {
             width: 100%;

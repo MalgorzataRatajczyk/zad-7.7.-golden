@@ -162,12 +162,13 @@ body {
 }
 
 .jumbotron .top_navigation {
-  display: block;
-  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .jumbotron .top_navigation .logo {
-  float: left;
+  width: 60%;
+  align-self: flex-start;
 }
 
 .jumbotron .top_navigation .logo .logo-text {
@@ -179,8 +180,8 @@ body {
 }
 
 .jumbotron .top_navigation .top_menu {
-  float: right;
-  width: 480px;
+  width: 60%;
+  align-self: flex-start;
   height: 15px;
 }
 
@@ -670,8 +671,9 @@ body {
 
 /* section - footer */
 .footer {
-  width: 100%;
+  width: 80%;
   margin-top: 20px;
+  justify-content: flex-start;
 }
 
 .footer .row .col-m-4 p {
@@ -758,6 +760,9 @@ body {
     width: 100%;
   }
   /* seckcja SERVICES */
+  .main_heading {
+    font-size: 30px;
+  }
   .services .content {
     width: 100%;
     display: flex;
