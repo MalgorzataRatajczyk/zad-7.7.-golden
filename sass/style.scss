@@ -723,8 +723,13 @@ body {
     .col-s-12 {width: 100%;}
 
      /* seckcja SERVICES */
+
      .main_heading {
-         font-size: 30px;
+        font-size: 30px;
+     }
+     .top_navigation {
+        display: flex;
+        flex-flow: column;
      }
     .services {
         .content {

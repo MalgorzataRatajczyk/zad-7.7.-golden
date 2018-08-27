@@ -763,6 +763,10 @@ body {
   .main_heading {
     font-size: 30px;
   }
+  .top_navigation {
+    display: flex;
+    flex-flow: column;
+  }
   .services .content {
     width: 100%;
     display: flex;
