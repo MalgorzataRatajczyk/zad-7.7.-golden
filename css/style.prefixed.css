@@ -58,7 +58,7 @@ body { margin: 0 auto; width: 100%; max-width: 1400px; }
 
 .jumbotron .top_navigation .logo { width: 60%; -ms-flex-item-align: start; align-self: flex-start; }
 
-.jumbotron .top_navigation .logo #logo-text { font-family: 'Great Vibes', cursive; font-size: 26px; line-height: 41px; text-align: left; color: #fed136; }
+.jumbotron .top_navigation .logo #logo_text { font-family: 'Great Vibes', cursive; font-size: 26px; line-height: 41px; text-align: left; color: #fed136; text-align: center; }
 
 .jumbotron .top_navigation .top_menu { width: 60%; -ms-flex-item-align: start; align-self: flex-start; height: 15px; }
 
@@ -79,9 +79,9 @@ body { margin: 0 auto; width: 100%; max-width: 1400px; }
 /* section SERVICES */
 .services .content { width: 80%; margin-bottom: 50px; }
 
-.services .content .col-m-4 button { background-color: transparent; border: none; }
+.services .content .col-m-4 button { background-color: transparent; width: 68px; height: 68px; border: 3px solid #fed136; border-radius: 50%; }
 
-.services .content .col-m-4 button i .icon-btn { width: 68px; height: 68px; color: #fed136; border: 3px solid #fed136; border-radius: 50%; font-size: 40px; line-height: 68px; text-align: center; }
+.services .content .col-m-4 button .icon-btn { color: #fed136; font-size: 40px; line-height: 68px; text-align: center; }
 
 .services .content .col-m-4 h3 { padding-bottom: 5px; margin-bottom: 5px; }
 
@@ -209,7 +209,7 @@ footer .row .col-m-4 p { font-family: "Roboto Slab", serif; color: #777777; }
 
 footer .row .col-m-4 button { margin: 0; border: hidden; background-color: inherit; }
 
-footer .row .col-m-4 button .icon-btn { width: 40px; height: 40px; border: 3px solid #222222; color: #fafafa; background-color: #222222; border-radius: 50%; margin: 0; padding: 0; cursor: pointer; font-size: 21px; line-height: 45px; }
+footer .row .col-m-4 button .icon-btn { width: 40px; height: 40px; border: 3px solid #222222; color: #fafafa; background-color: #222222; border-radius: 50%; margin: 0; padding: 0; cursor: pointer; font-size: 21px; line-height: 40px; }
 
 footer .row .col-m-4 button .fa-twitter:hover { transition: .4s linear; background-color: #00aced; }
 

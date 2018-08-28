@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.flex_row, .services .content, .portfolio .gallery, .our_team .content, .our_team .content .col-m-4 .social-media-icons, .media, .contact_us .contact_form, .contact_us .contact_form .col-m-6, footer, footer .row, footer .row .col-m-4 {
+.flex_row, .services .content, .portfolio .gallery, .our_team .content, .our_team .content .col-m-4 .social-media-icons, .media, .contact_us .contact_form, .contact_us .contact_form .col-m-6, footer, footer .row, footer .row .col-m-6 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -250,15 +250,14 @@ body {
 
 .services .content .col-m-4 button {
   background-color: transparent;
-  border: none;
-}
-
-.services .content .col-m-4 button i .icon-btn {
   width: 68px;
   height: 68px;
-  color: #fed136;
   border: 3px solid #fed136;
   border-radius: 50%;
+}
+
+.services .content .col-m-4 button .icon-btn {
+  color: #fed136;
   font-size: 40px;
   line-height: 68px;
   text-align: center;
@@ -672,23 +671,23 @@ body {
 
 /* section - footer */
 footer {
-  width: 80%;
+  width: 66%;
   margin-top: 20px;
   justify-content: flex-start;
 }
 
-footer .row .col-m-4 p {
+footer .row .col-m-6 p {
   font-family: "Roboto Slab", serif;
   color: #777777;
 }
 
-footer .row .col-m-4 button {
+footer .row .col-m-6 button {
   margin: 0;
   border: hidden;
   background-color: inherit;
 }
 
-footer .row .col-m-4 button .icon-btn {
+footer .row .col-m-6 button .icon-btn {
   width: 40px;
   height: 40px;
   border: 3px solid #222222;
@@ -702,22 +701,22 @@ footer .row .col-m-4 button .icon-btn {
   line-height: 40px;
 }
 
-footer .row .col-m-4 button .fa-twitter:hover {
+footer .row .col-m-6 button .fa-twitter:hover {
   transition: .4s linear;
   background-color: #00aced;
 }
 
-footer .row .col-m-4 button .fa-facebook-f:hover {
+footer .row .col-m-6 button .fa-facebook-f:hover {
   transition: .4s linear;
   background-color: #3b5998;
 }
 
-footer .row .col-m-4 button .fa-pinterest-p:hover {
+footer .row .col-m-6 button .fa-pinterest-p:hover {
   transition: .4s linear;
   background-color: #da2713;
 }
 
-footer .row .col-m-4 button .fa-google-plus-g:hover {
+footer .row .col-m-6 button .fa-google-plus-g:hover {
   transition: .4s linear;
   background-color: #d95232;
 }

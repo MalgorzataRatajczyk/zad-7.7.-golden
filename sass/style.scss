@@ -223,18 +223,15 @@ body {
             @extend .flex_column;
             button {
                 background-color: transparent;
-                border: none;
-                i {
-                    .icon-btn {
-                        width: 68px;
-                        height: 68px;
-                        color: $yellow;
-                        border: 3px solid $yellow;
-                        border-radius: 50%;
-                        font-size: 40px;
-                        line-height: 68px;
-                        text-align: center;
-                    }
+                width: 68px;
+                height: 68px;
+                border: 3px solid $yellow;
+                border-radius: 50%;
+                .icon-btn {
+                    color: $yellow;
+                    font-size: 40px;
+                    line-height: 68px;
+                    text-align: center;
                 }
             }
             h3 {
@@ -657,19 +654,19 @@ body {
 }
 /* section - footer */
 footer {
-    width: 80%;
+    width: 66%;
     margin-top: 20px;
     @extend .flex_row;
     justify-content: flex-start;
     .row {
         @extend .flex_row;
-        .col-m-4 {
+        .col-m-6 {
             p {
                 font-family: $text-font;
                 color: $text-color;
             }
         }
-        .col-m-4 {
+        .col-m-6 {
             @extend .flex_row;
             button {
                 margin: 0;
